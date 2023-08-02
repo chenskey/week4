@@ -1,0 +1,39 @@
+.blogSocial {
+    span {
+        margin-right: 16px;
+
+        a img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.tags {
+    span {
+        margin-right: 24px;
+    }
+}
+
+.prevNext {
+    span {
+        i {
+            margin-right: 12px;
+        }
+
+        a {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+@include mobile() {
+
+    .blogSocial,
+    .prevNext {
+        display: none !important;
+    }
+}
