@@ -8,6 +8,24 @@
     }
 }
 
+.content {
+    .container {
+        @include pad() {
+            padding-top: 80px;
+        }
+
+        @include mobile() {
+            padding-top: 40px;
+        }
+    }
+}
+
+.breadcrumb {
+    .container {
+        margin-top: 24px;
+    }
+}
+
 .footer {
     .container {
         padding-top: 60px;
@@ -20,8 +38,7 @@
     }
 }
 
-.navBar,
-.content {
+.navBar {
     .container {
         @include pc() {
             padding-top: 24px;

@@ -1,24 +1,21 @@
-.group {
-    .container {
-        .groupList {
-            width: 100% !important;
-            display: flex !important;
-            flex-direction: row !important;
+.groupList {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
 
-            .active {
-                border-bottom: 12px solid #AA0601 !important;
-            }
+    .active {
+        border-bottom: 12px solid #AA0601 !important;
+    }
 
-            .groupItem {
-                padding-top: 24px;
-                padding-bottom: 24px;
-                /* padding: 24px 150px; */
+    .groupItem {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 24px;
+        /* padding: 24px 150px; */
 
-                &:hover {
-                    color: #ffffff !important;
-                    background: #AA0601;
-                }
-            }
+        &:hover {
+            color: #ffffff !important;
+            background: #AA0601;
         }
     }
 }
@@ -38,14 +35,12 @@
     }
 }
 
-@include pad() {
-    .group {
-        .container {
-            .groupList {
-                .groupItem {
-                    font-size: 16px;
-                }
-            }
+@include iphone() {
+
+    .groupList {
+        .groupItem {
+            font-size: 16px;
         }
     }
+
 }
