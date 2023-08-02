@@ -51,7 +51,7 @@
 }
 
 .banner {
-  background-image: url("../assets/images/home-header.png");
+  background-image: url("../images/home-header.png");
   background-position: center;
   background-size: cover;
 
@@ -76,7 +76,7 @@
   }
 
   @include pc() {
-    background-image: url("../assets/images/home-header-sm.png");
+    background-image: url("../images/home-header-sm.png");
     background-size: cover;
   }
 
